@@ -5,11 +5,14 @@
   "main": "index.html",
   "type": "commonjs",
   "scripts": {
-    "frontend": "node index.js",
-    "backend": "node server.js",
-    "start": "concurrently \"npm run frontend\" \"npm run backend\"",
-    "heroku-postbuild": "cd server && npm install"
-  },
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview",
+  "frontend": "node index.js",
+  "backend": "node server.js",
+  "start": "concurrently \"npm run frontend\" \"npm run backend\"",
+  "heroku-postbuild": "cd server && npm install"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Shange-Fagan/Airbnb-Assistant.git"
@@ -41,7 +44,8 @@
     "puppeteer-extra": "^3.3.6",
     "puppeteer-extra-plugin-stealth": "^2.11.2",
     "three": "^0.168.0",
-    "three-globe": "^2.34.4"
+    "three-globe": "^2.34.4",
+    "vite": "^6.4.1"
   },
   "devDependencies": {
     "concurrently": "^9.1.0"
